@@ -1,0 +1,125 @@
+.testimonial-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.car2{
+  width: 20px; 
+}
+
+.testimonial-card {
+  position: relative;
+  padding: 20px;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.testimonial-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testimonial-navigation button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-navigation button:hover {
+  background-color: #0056b3;
+}
+
+.testimonial-navigation button:focus {
+  outline: none;
+}
+
+.testimonial-container {
+  background-color: #e8f0e6; /* Light green */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  background-color: #2e4d2c; /* Dark green */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 400px;
+}
+
+.testimonial-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.car2{
+  height: 1000px;
+}

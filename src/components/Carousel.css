@@ -1,0 +1,33 @@
+.carousel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #f6f1e1, #604e11);
+    border: 1px solid #7a5815;
+  }
+  
+  .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+  }
+  
+  .carousel-indicators button {
+    background-color: #c19a6b;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #c3711f;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(193, 121, 33, 0.6);
+  }

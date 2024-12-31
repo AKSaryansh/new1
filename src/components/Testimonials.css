@@ -1,0 +1,119 @@
+/* General Container */
+.testimonials-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #f6e7d8; /* Soft beige background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  /* Heading */
+  .testimonials-heading {
+    font-family: 'Georgia', serif;
+    color: #5a3921; /* Deep brown */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Individual Testimonial Card */
+  .testimonial-card {
+    background-color: #fff7f0; /* Light cream */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  /* Testimonial Title */
+  .testimonial-title {
+    font-family: 'Georgia', serif;
+    color: #7b4f2a; /* Warm brown */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #f6e7d8; /* Light brown */
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .testimonial-title:hover {
+    background-color: #5a3921; /* Dark brown */
+    color: #ffffff; /* White text */
+  }
+  
+  /* Testimonial Content */
+  .testimonial-content {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: none;
+  }
+  
+  .testimonial-content.open {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Blockquote Styling */
+  blockquote {
+    font-style: italic;
+    color: #7b4f2a; /* Warm brown */
+    background-color: #f6e7d8; /* Soft beige background */
+    padding: 15px;
+    border-left: 5px solid #7b4f2a; /* Warm brown border */
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Author Name */
+  .testimonial-author {
+    font-weight: bold;
+    color: #5a3921; /* Deep brown */
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  /* Button Styling */
+  .more-button {
+    background-color: #f6e7d8; /* Light brown */
+    color: #7b4f2a; /* Warm brown text */
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .more-button-2 {
+    background-color: #f6e7d8; /* Light brown */
+    color: brown; /* Warm brown text */
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .more-button:hover {
+    background-color: #5a3921; /* Dark brown */
+    color: #ffffff; /* White text */
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
