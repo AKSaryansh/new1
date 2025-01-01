@@ -7,7 +7,7 @@ function Carousel2() {
         className="navbar navbar-expand-lg"
         style={{
           zIndex: 1,
-          top: '220px',
+          top: '0px',
           backgroundColor: '#583f13', // Red background
           color: '#fff', // White text
           padding: '10px 0',

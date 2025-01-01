@@ -4,16 +4,19 @@ import {
   BrowserRouter as Router,
   Routes, Route, Link, useNavigate,useParams,useMatch
 } from 'react-router-dom'
+
+
+
 function Specialities() {
   return (
     <>
-      <div className="text-center" style={{ marginBottom: "50px", marginTop: "240px" }}>
+      <div className="text-center" style={{ marginBottom: "50px", marginTop: "50px" }}>
         <img src="http://127.0.0.1:5500/themes/solidayurvedic001/img/section-icon.png" alt="Section Icon" />
         <h1>Our Specialties</h1>
       </div>
       <div id="carouselExample2" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="5000">
+          <div className="carousel-item active" data-bs-interval="2000">
             <div className="d-flex justify-content-center">
               <div className="flip-box mx-3">
                 <div className="flip-box-inner">
@@ -38,7 +41,7 @@ function Specialities() {
             </div>
           </div>
 
-          <div className="carousel-item" data-bs-interval="5000">
+          <div className="carousel-item" data-bs-interval="2000">
             <div className="d-flex justify-content-center">
               <div className="flip-box mx-3">
                 <div className="flip-box-inner">
@@ -63,7 +66,7 @@ function Specialities() {
             </div>
           </div>
 
-          <div className="carousel-item" data-bs-interval="5000">
+          <div className="carousel-item" data-bs-interval="2000">
             <div className="d-flex justify-content-center">
               <div className="flip-box mx-3">
                 <div className="flip-box-inner">

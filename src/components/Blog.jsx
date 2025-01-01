@@ -7,7 +7,7 @@ import blog3 from './blog-3.jpg'
 function Blog() {
   return (
     <>
-    <div className="heading-container" style={{marginTop:"240px"}}>
+    <div className="heading-container" style={{marginTop:"197px"}}>
       <h1 className="heading-text" >BLOG</h1>
     </div>
     <section  className="section-padding">

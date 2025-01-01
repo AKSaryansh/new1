@@ -1,33 +1,96 @@
-.carousel {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to bottom, #f6f1e1, #604e11);
-    border: 1px solid #7a5815;
-  }
-  
-  .carousel-inner img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: invert(1);
-  }
-  
-  .carousel-indicators button {
-    background-color: #c19a6b;
-    border: none;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
-  }
-  
-  .carousel-indicators .active {
-    background-color: #c3711f;
-  }
-  
-  button:focus {
-    outline: none;
-    box-shadow: 0 0 8px rgba(193, 121, 33, 0.6);
-  }
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 20px;
+}
+
+
+#carouselExample {
+  max-width: 1200px;  /* Allowing wider width */
+  width: 90%;  /* Adjust width dynamically */
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #43341a;
+}
+
+.car-div-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;  /* Increased gap between divs */
+}
+
+.car-div {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  width: 100%;  /* Increased width to occupy more space */
+}
+
+.car-div:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+
+.car-div img {
+
+  width: 280px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+
+.car-div span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3B2C1B;
+}
+
+.car-div .verified-tag {
+  font-size: 14px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.car-div p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  color: black;
+  border: none;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  color: black;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(0) !important;
+}
+
+.carousel-indicators button {
+  background-color: #000;
+}
+
+.carousel-indicators button.active {
+  background-color: #fff;
+}

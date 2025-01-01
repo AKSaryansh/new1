@@ -14,7 +14,7 @@ function Testimonials() {
 
   return (
     <>
-      <h1 className="text-center testimonials-heading">
+      <h1 className="text-center testimonials-heading" style={{marginTop:"40px"}}>
         <div>
           <img
             src="http://127.0.0.1:5500/themes/solidayurvedic001/img/section-icon.png"
