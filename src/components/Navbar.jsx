@@ -2,6 +2,9 @@ import React from 'react'
 
 import loginlogo from './AdobeStock_570927296_Preview.jpeg'
 import baglogo from './badlogo.png'
+import logo from'./logo.png' 
+
+
 function Navbar() {
   return (
     <>
@@ -9,7 +12,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{position:"fixed",top:"0px",right:"0px",left:"0px",zIndex:20}} >
     
   <div className="container-fluid">
-  <img src="http://127.0.0.1:5500/themes/solidayurvedic001/img/logo.png" alt="Logo" style={{height:'80px',width:'200px'}}/>
+  <img src={logo} alt="Logo" style={{height:'80px',width:'200px'}}/>
     {/* <a className="navbar-brand" href="#">Navbar</a> */}
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
