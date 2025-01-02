@@ -3,9 +3,13 @@ import {
     BrowserRouter as Router,
     Routes, Route, Link, useNavigate,useParams,useMatch
   } from 'react-router-dom'
+
+import './Navbar2.css'
+
 function Navbar2() {
   return (
-    <nav className="navbar navbar-expand-lg bg-success" style={{position:"fixed",top:"77px",zIndex:19,left:"0px",right:"0px",fontSize:"20px",backgroundColor:"black"}}>
+    <div className='div-req'>
+    <nav className="navbar navbar-expand-lg bg-secondary" style={{position:"fixed",top:"77px",zIndex:19,left:"0px",right:"0px",fontSize:"20px",backgroundColor:"black"}}>
     <div className="container-fluid p-3 text-primary-emphasis ">
       
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,6 +65,7 @@ function Navbar2() {
       </div>
     </div>
   </nav>
+  </div>
   )
 }
 

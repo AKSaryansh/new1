@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Routes, Route, Link, useNavigate,useParams,useMatch
 } from 'react-router-dom'
+import testlogo from './fool.png'
 
 function Testimonials() {
   const [activeTestimonial, setActiveTestimonial] = useState(null);
@@ -17,7 +18,7 @@ function Testimonials() {
       <h1 className="text-center testimonials-heading" style={{marginTop:"40px"}}>
         <div>
           <img
-            src="http://127.0.0.1:5500/themes/solidayurvedic001/img/section-icon.png"
+            src={testlogo}
             alt="Section Icon"
           />
         </div>

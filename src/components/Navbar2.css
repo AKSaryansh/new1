@@ -1,3 +1,7 @@
-.navbar-custom {
-    background-color: lightgreen;
+.div-req .nav-link:hover{
+    font-size: 25px;
+    color: white;
+}
+.div-req .nav-link {
+    transition: all 0.3s ease-in-out;
 }

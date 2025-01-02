@@ -19,11 +19,14 @@ function Carousel2() {
             <div
               style={{
                 backgroundColor: '#fff',
-                color: '#ff8c00',
+                color: 'black',
                 padding: '5px 10px',
+                width:"400px",
                 fontWeight: 'bold',
                 borderRadius: '5px',
                 marginRight: '10px',
+                fontSize:"27px",
+                fontFamily:"Agu Display"
               }}
             >
               Important Information
@@ -34,7 +37,8 @@ function Carousel2() {
                 className="news-marquee"
                 style={{
                   fontWeight: 'bold',
-                  fontSize: '16px',
+                  fontSize: '20px',
+
                   color: '#fff',
                   whiteSpace: 'nowrap',
                 }}

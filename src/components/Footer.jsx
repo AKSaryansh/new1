@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import logo from './logo.png'
 
  // Assuming you'll style it separately
 
@@ -15,7 +16,7 @@ const Footer = () => {
                         <li>General Terms & Conditions</li>
                 
    
-                        <li><img src="http://127.0.0.1:5500/themes/solidayurvedic001/img/logo.png" alt="Logo" style={{height: "80px", width: "200px",marginTop:"20px"}}/></li>
+                        <li><img src={logo} alt="Logo" style={{height: "80px", width: "200px",marginTop:"20px"}}/></li>
                     </ul>
                 </div>
                 <div className="footer-section">
