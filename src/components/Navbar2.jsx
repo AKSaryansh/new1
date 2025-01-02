@@ -9,7 +9,7 @@ import './Navbar2.css'
 function Navbar2() {
   return (
     <div className='div-req'>
-    <nav className="navbar navbar-expand-lg bg-secondary" style={{position:"fixed",top:"77px",zIndex:19,left:"0px",right:"0px",fontSize:"20px",backgroundColor:"black"}}>
+    <nav className="navbar navbar-expand-lg bg-secondary" style={{position:"fixed",top:"77px",zIndex:19,fontSize:"20px",backgroundColor:"black",right:"0px",left:"0px"}}>
     <div className="container-fluid p-3 text-primary-emphasis ">
       
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@ function Navbar2() {
           <li className="nav-item">
             <Link className="nav-link" to="/Contact">Contact Us</Link>
           </li>
-          <div className="social-icons" style={{marginTop:"8px",right:"100px",marginLeft:"1050px"}}>
+          <div className="social-icons" style={{position:"fixed",marginTop:"8px",right:"50px"}}>
                         <a href="#" >
                         <i className="fab fa-facebook-f"></i>
                         </a>

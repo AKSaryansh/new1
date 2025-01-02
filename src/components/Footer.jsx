@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import logo from './logo.png'
+import wa from './pngegg.png'
 
  // Assuming you'll style it separately
 
@@ -62,10 +63,18 @@ const Footer = () => {
                     <p>&#128337; shubh120174@gmail.com</p>
                     
                 </div>
+                <div className='whatsapp-img' style={{width:"120px",height:"100px",marginLeft:"820px",marginTop:"-70px",marginBottom:"40px"}}>
+                <a href="https://wa.me/916397317761?text=Hello%20I%20am%20interested%20in%20your%20services">
+                <img src={wa} alt="" />
+                </a>
+                <div className='ping' style={{display:""}}>Click to Ping!!</div>
             </div>
+            </div>
+            
             <div className="footer-bottom">
                 &copy; 2024 Sai Ayurveda Limited All Rights Reserved.
             </div>
+            
         </footer>
     );
 };
