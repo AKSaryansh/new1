@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import './Testimonials.css';
-import {
-  BrowserRouter as Router,
-  Routes, Route, Link, useNavigate,useParams,useMatch
-} from 'react-router-dom'
-import testlogo from './fool.png'
+import { Link } from 'react-router-dom';
+import testlogo from './fool.png';
 
 function Testimonials() {
   const [activeTestimonial, setActiveTestimonial] = useState(null);
-
+  
   const toggleTestimonial = (index) => {
     setActiveTestimonial(activeTestimonial === index ? null : index);
   };
@@ -17,10 +14,7 @@ function Testimonials() {
     <>
       <h1 className="text-center testimonials-heading" style={{marginTop:"40px"}}>
         <div>
-          <img
-            src={testlogo}
-            alt="Section Icon"
-          />
+          <img src={testlogo} alt="Section Icon" />
         </div>
         Our Testimonials
       </h1>
@@ -28,16 +22,12 @@ function Testimonials() {
         {/* Patient 1 */}
         <div className="testimonial-card">
           <h2
-            className="testimonial-title"
+            className={`testimonial-title ${activeTestimonial === 1 ? 'active' : ''}`}
             onClick={() => toggleTestimonial(1)}
           >
             Patient #1
           </h2>
-          <div
-            className={`testimonial-content ${
-              activeTestimonial === 1 ? 'open' : ''
-            }`}
-          >
+          <div className={`testimonial-content ${activeTestimonial === 1 ? 'open' : ''}`}>
             <blockquote>
               <p>
                 "I had a severe back problem for a long time. Then I came to
@@ -54,16 +44,12 @@ function Testimonials() {
         {/* Patient 2 */}
         <div className="testimonial-card">
           <h2
-            className="testimonial-title"
+            className={`testimonial-title ${activeTestimonial === 2 ? 'active' : ''}`}
             onClick={() => toggleTestimonial(2)}
           >
             Patient #2
           </h2>
-          <div
-            className={`testimonial-content ${
-              activeTestimonial === 2 ? 'open' : ''
-            }`}
-          >
+          <div className={`testimonial-content ${activeTestimonial === 2 ? 'open' : ''}`}>
             <blockquote>
               <p>
                 "The care and attention I received at the Ayurveda hospital
@@ -79,16 +65,12 @@ function Testimonials() {
         {/* Discover More Section */}
         <div className="testimonial-card">
           <h2
-            className="testimonial-title"
+            className={`testimonial-title ${activeTestimonial === 3 ? 'active' : ''}`}
             onClick={() => toggleTestimonial(3)}
           >
             Discover More
           </h2>
-          <div
-            className={`testimonial-content ${
-              activeTestimonial === 3 ? 'open' : ''
-            }`}
-          >
+          <div className={`testimonial-content ${activeTestimonial === 3 ? 'open' : ''}`}>
             <blockquote>
               <p>
                 "Our patients' stories are a testament to the transformative
@@ -97,11 +79,11 @@ function Testimonials() {
               </p>
             </blockquote>
             <div className="text-center">
-            <Link to='/Testimonials'> 
-            <button type="button" className="btn btn-success more-button-2">
-             Click here for more
-            </button>
-            </Link>
+              <Link to='/Testimonials'>
+                <button type="button" className="btn btn-success more-button-2">
+                  Click here for more
+                </button>
+              </Link>
             </div>
           </div>
         </div>

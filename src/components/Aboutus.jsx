@@ -102,7 +102,7 @@ function Aboutus() {
                       <div className="row">
                         <div className="col-md-6">
                           <div className="abt-img">
-                            <img src={doc1} alt="Associates" style={{marginLeft:"160px", height:"300px",width:"200px"}} />
+                            <img className='doc-img' src={doc1} alt="Associates" />
                           </div>
                         </div>
                         <div className="col-md-6">

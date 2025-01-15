@@ -7,6 +7,10 @@
     opacity: 1 !important;
 }
 
+.doc-img{
+    margin-left:160px;
+    height:300px;width:200px;
+}
 
 .inner-page h1 {
     color: #fff;
@@ -251,6 +255,14 @@ img {
     .col-md-12 {
         width: 100%;
     }
+}
+
+@media (max-width:768px){
+    .doc-img{
+        margin-left:20px;
+        height:250px;width:180px;
+    }
+    
 }
 
 .col-md-12 {

@@ -1,0 +1,71 @@
+/* General container styling */
+.speciality-container {
+    padding: 40px;
+    background-color: #f4eee1;
+    border-radius: 10px;
+    margin-top: 120px;
+  }
+  
+  .speciality-title {
+    text-align: center;
+    color: #6b4226;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .speciality-subtitle {
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .speciality-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem; /* Decreased font size for responsiveness */
+  }
+  
+  @media (max-width: 992px) {
+    .speciality-container {
+      padding: 20px;
+      margin-top: 50px;
+    }
+  
+    .speciality-title {
+      font-size: 1.8rem;
+    }
+  
+    .speciality-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .speciality-card {
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .speciality-container {
+      padding: 15px;
+      margin-top: 160px;
+    }
+  
+    .speciality-title {
+      font-size: 1.5rem;
+    }
+  
+    .speciality-subtitle {
+      font-size: 0.8rem;
+    }
+  
+    .speciality-card {
+      padding: 8px;
+      font-size: 0.75rem;
+    }
+  }
+  

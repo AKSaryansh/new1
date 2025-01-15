@@ -4,6 +4,7 @@
   align-items: center;
   min-height: 85vh;
   padding: 20px;
+  margin-top: 160px;
 }
 
 
@@ -88,6 +89,94 @@
 }
 
 .carousel-indicators button {
+  background-color: #000;
+}
+
+.carousel-indicators button.active {
+  background-color: #fff;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  /* #carouselExample {
+    width: 98%;
+    padding: 15px;
+    margin-top: 400px;
+  } */
+  .car-div-container {
+    flex-direction: column;
+    
+  }
+  
+  .car-div {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-container {
+  
+    min-height: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #carouselExample {
+    width: 87%;
+    padding: 15px;
+    margin-top: 50px;
+  }
+  
+  .car-div {
+    padding: 15px;
+    width: 95%;
+  }
+  
+  /* .carousel-container {
+    margin-top: 200px;
+  } */
+  
+  .car-div img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-container {
+    margin-top: 140px;
+    padding: 5px;
+  }
+  
+  .car-div {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .car-div span {
+    font-size: 16px;
+  }
+  
+  .car-div .verified-tag {
+    font-size: 12px;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 30px;
+  }
+}
+
+/* Indicator styles */
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
   background-color: #000;
 }
 

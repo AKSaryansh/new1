@@ -1,0 +1,22 @@
+@media (max-width: 991px) {
+    .navbar .container-fluid {
+        padding: 10px;
+    }
+    
+    .navbar form {
+        margin: 10px 0;
+    }
+    
+    .navbar .d-flex.align-items-center {
+        margin-top: 10px;
+    }
+}
+
+.navbar {
+    padding: 8px 16px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #28a745;
+}

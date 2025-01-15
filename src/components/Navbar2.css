@@ -1,8 +1,17 @@
 .div-req .nav-link:hover{
     font-size: 25px;
-    color: white;
+    color: rgb(122, 84, 31);
 }
 
 .div-req .nav-link {
     transition: all 0.3s ease-in-out;
 }
+.navbar {
+    top: 74px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      top: 85px;
+    }
+  }

@@ -1,25 +1,45 @@
+/* Header Styles */
 .heading-container {
-    background-color: #3B2C1B; /* Replace with the exact color from the image */
+    background-color: #3B2C1B;
     text-align: center;
-    padding: 20px 0; /* Adjust padding for the desired height */
-  }
+    padding: 20px 0;
+    margin-top: clamp(100px, 15vw, 197px);
+}
 
-
-  .heading-text {
+.heading-text {
     color: white;
-    font-size: 36px; /* Adjust font size */
+    font-size: clamp(28px, 5vw, 36px);
     font-weight: bold;
-
     margin: 0;
-    font-family: 'Times New Roman', Times, serif; /* Optional: Customize the font family */
-  }
-  
-  .section-padding {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Section Styles */
+.section-padding {
     padding: 60px 0px;
 }
-section{
+
+section {
     display: block;
     unicode-bidi: isolate;
+}
+
+/* Blog Card Styles */
+.blog-div {
+    position: relative;
+    margin-bottom: 30px;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.blog-div:hover {
+    transform: translateY(-5px);
+}
+
+.blog-div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .blog-div span {
@@ -29,54 +49,55 @@ section{
     position: absolute;
     left: 15px;
     top: 0;
-}
-* {
-    box-sizing: border-box;
+    z-index: 1;
 }
 
-.blog-desc ul {
-    display: inline-flex
-;
-    padding: 0px;
-    list-style: none;
-}
-.blog-desc ul li {
-    margin-right: 20px;
-    border-right: 1px solid #cbc7c7;
-    padding-right: 20px;
-}
 .blog-desc {
     background: #fff;
     padding: 20px 10px;
     border: 1px solid #eee;
 }
-img {
-    max-width: 100%;
-    height: auto;
+
+.blog-desc ul {
+    display: inline-flex;
+    padding: 0px;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
-.col-md-4{
+
+.blog-desc ul li {
+    margin-right: 20px;
+    border-right: 1px solid #cbc7c7;
+    padding-right: 20px;
+}
+
+.blog-desc ul li:last-child {
+    border-right: none;
+}
+
+.blog-desc h3 {
+    font-size: clamp(16px, 2.5vw, 20px);
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    float: left;
-    width: 33.33333333%;
-}
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
 }
 
+/* Tab Content */
 .tab .tab-content {
     color: #999;
     background: #fff;
@@ -88,12 +109,92 @@ ul {
     margin-top: 30px;
     border: 2px solid #583f13;
 }
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
-}
-ul {
-    list-style-type: disc;
+
+/* Responsive Grid */
+@media (min-width: 992px) {
+    .col-md-4 {
+        width: 33.33333333%;
+        float: left;
+    }
 }
 
+@media (min-width: 576px) and (max-width: 991px) {
+    .col-md-4 {
+        width: 50%;
+        float: left;
+    }
+    
+    .blog-desc ul {
+        flex-wrap: wrap;
+    }
+    
+    .blog-desc ul li {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 575px) {
+    .col-md-4 {
+        width: 100%;
+        float: none;
+    }
+    
+    .blog-div {
+        margin-bottom: 20px;
+    }
+    
+    .blog-desc {
+        padding: 15px 10px;
+    }
+    
+    .blog-desc ul {
+        flex-wrap: wrap;
+    }
+    
+    .blog-desc ul li {
+        margin-right: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+    
+    .heading-container {
+        padding: 15px 0;
+    }
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Add these styles to your Blog.css */
+
+.heading-container {
+    background-color: #3B2C1B;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10; /* Lower than navbar's z-index */
+}
+
+/* Media queries for responsive margin-top */
+@media screen and (min-width: 992px) {
+    /* For desktop screens */
+    .heading-container {
+        margin-top: 200px; /* Adjust based on your navbar height */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* For tablet screens */
+    .heading-container {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* For mobile screens */
+    .heading-container {
+        margin-top: 170px;
+    }
+}

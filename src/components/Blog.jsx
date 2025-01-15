@@ -5,99 +5,45 @@ import blog2 from './blog-2.jpg'
 import blog3 from './blog-3.jpg'
 
 function Blog() {
-  return (
-    <>
-    <div className="heading-container" style={{marginTop:"197px"}}>
-      <h1 className="heading-text" >BLOG</h1>
-    </div>
-    <section  className="section-padding">
-    <div  className="container">
-        <div  className="row">
-            <div  className="col-md-4">
-               <div  className="blog-div">
-                <img src={blog1}/>
-                <span>Ayurveda</span>
-                <div  className="blog-desc">
-                    <ul>
-                        <li>July 30, 2020</li>
-                        <li>Admin</li>
-                    </ul>
-                    <h3>Ayurveda, is the best treatment for anything. </h3>
-                </div>
-               </div>
+    return (
+        <>
+            <div className="heading-container" >
+                <h1 className="heading-text">BLOG</h1>
             </div>
-             <div  className="col-md-4">
-               <div  className="blog-div">
-                <img src={blog2}/>
-                <span>Medication</span>
-                <div  className="blog-desc">
-                    <ul>
-                        <li>July 30, 2020</li>
-                        <li>Admin</li>
-                    </ul>
-                    <h3>An ancient medication for all the problems. </h3>
+            <section className="section-padding">
+                <div className="container">
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                        {[...Array(6)].map((_, index) => (
+                            <div className="col" key={index}>
+                                <div className="blog-div h-100">
+                                    <img 
+                                        src={index % 3 === 0 ? blog1 : index % 3 === 1 ? blog2 : blog3}
+                                        alt={`Blog ${index + 1}`}
+                                        className="img-fluid"
+                                    />
+                                    <span>{index % 3 === 0 ? 'Ayurveda' : index % 3 === 1 ? 'Medication' : 'Treatments'}</span>
+                                    <div className="blog-desc">
+                                        <ul className="list-unstyled d-flex gap-3">
+                                            <li>July 30, 2020</li>
+                                            <li>Admin</li>
+                                        </ul>
+                                        <h3 className="blog-title">
+                                            {index % 3 === 0 
+                                                ? "Ayurveda, is the best treatment for anything."
+                                                : index % 3 === 1 
+                                                    ? "An ancient medication for all the problems."
+                                                    : "Ayurvedic Treatments: The best healing process."
+                                            }
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-               </div>
-            </div>
-             <div  className="col-md-4">
-               <div  className="blog-div">
-                <img src={blog3}/>
-                <span>Treatments</span>
-                <div  className="blog-desc">
-                    <ul>
-                        <li>July 30, 2020</li>
-                        <li>Admin</li>
-                    </ul>
-                    <h3>Ayurvedic Treatments: The best healing process.</h3>
-                </div>
-               </div>
-            </div>
-        </div>
-        <div  className="row">
-            <div  className="col-md-4">
-               <div  className="blog-div">
-                <img src={blog1}/>
-                <span>Ayurveda</span>
-                <div  className="blog-desc">
-                    <ul>
-                        <li>July 30, 2020</li>
-                        <li>Admin</li>
-                    </ul>
-                    <h3>Ayurveda, is the best treatment for anything. </h3>
-                </div>
-               </div>
-            </div>
-             <div  className="col-md-4">
-               <div  className="blog-div">
-                <img src={blog2}/>
-                <span>Medication</span>
-                <div  className="blog-desc">
-                    <ul>
-                        <li>July 30, 2020</li>
-                        <li>Admin</li>
-                    </ul>
-                    <h3>An ancient medication for all the problems. </h3>
-                </div>
-               </div>
-            </div>
-             <div  className="col-md-4">
-               <div  className="blog-div">
-                <img src={blog3}/>
-                <span>Treatments</span>
-                <div  className="blog-desc">
-                    <ul>
-                        <li>July 30, 2020</li>
-                        <li>Admin</li>
-                    </ul>
-                    <h3>Ayurvedic Treatments: The best healing process.</h3>
-                </div>
-               </div>
-            </div>
-        </div>
-    </div>
-</section>
-    </>
-  )
+            </section>
+        </>
+    )
 }
 
 export default Blog

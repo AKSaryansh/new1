@@ -21,7 +21,7 @@ function Carousel2() {
                 backgroundColor: '#fff',
                 color: 'black',
                 padding: '5px 10px',
-                width:"400px",
+                width:"200px",
                 fontWeight: 'bold',
                 borderRadius: '5px',
                 marginRight: '10px',
